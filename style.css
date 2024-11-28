@@ -1,0 +1,203 @@
+/* Global Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blanchedalmond;
+}
+
+/* Home Page Styles */
+.home {
+  background-image: url(./bg-home-office-city.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.home .content-wrapper {
+  background: rgba(44, 39, 39, 0.8);
+  background-image: url(./bg-coffee-shop.jpg);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+/* Resume Page Styles */
+.resume {
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.resume header {
+  text-align: center;
+  padding: 20px;
+  background: #e0e0e0;
+}
+
+.resume-section {
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-section h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+/* Project Section Styles */
+.project-item {
+  display: block; /* Ensures the project info is left-aligned */
+  margin: 20px 0;
+  text-align: left; /* Align text to the left */
+}
+
+.project-item img {
+  width: 70%; /* Reduce image size */
+  max-width: 400px; /* Restrict the image width */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-item h3 {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+.project-item p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Footer Styles */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+
+.footer ul li img {
+  height: 30px;
+}
+
+/* Responsive Design */
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header h2 {
+    font-size: 1.2em;
+  }
+
+  .content-wrapper {
+    padding: 15px;
+  }
+
+  .resume-section {
+    padding: 15px;
+  }
+
+  .project-item img {
+    width: 80%; /* Adjust image size for smaller screens */
+  }
+
+  .project-item h3 {
+    font-size: 1.5em;
+  }
+
+  .project-item p {
+    font-size: 1em;
+  }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header h2 {
+    font-size: 1em;
+  }
+
+  .footer ul {
+    flex-direction: column; /* Stack footer items vertically */
+    align-items: center;
+  }
+
+  .home {
+    padding: 10px;
+  }
+
+  .home .content-wrapper {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .project-item img {
+    width: 100%; /* Make image full width on smaller screens */
+    margin: 0 auto;
+  }
+
+  .project-item h3 {
+    font-size: 1.3em;
+  }
+
+  .project-item p {
+    font-size: 1em;
+  }
+
+  .resume-section {
+    margin: 15px 0;
+  }
+}
